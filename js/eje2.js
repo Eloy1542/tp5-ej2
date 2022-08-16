@@ -50,66 +50,46 @@ class Persona {
         }
 
 
-
-        function datos(){
-
-            
-            
-      document.getElementById('produc-form').addEventListener('submit', function(e){
+        
+        document.getElementById('produc-form').addEventListener('submit', function(e){
 
         
-      let nombre = document.getElementById('nombre').value
-      console.log(document.getElementById('nombre').value)
-      let edad = document.getElementById('edad').value
-      console.log(document.getElementById('edad').value)
-      let sexo = document.getElementById('sexo').value
-      console.log(document.getElementById('sexo').value)
-      let peso = document.getElementById('peso').value
-      console.log(document.getElementById('peso').value)
-      let altura = document.getElementById('altura').value
-      console.log(document.getElementById('altura').value)
-      let nacimiento = document.getElementById('nacimiento').value
-      console.log(document.getElementById('nacimiento').value)
-      
+          let nombre = document.getElementById('nombre').value
+          console.log(document.getElementById('nombre').value)
+          let edad = document.getElementById('edad').value
+          console.log(document.getElementById('edad').value)
+          let sexo = document.getElementById('sexo').value
+          console.log(document.getElementById('sexo').value)
+          let peso = document.getElementById('peso').value
+          console.log(document.getElementById('peso').value)
+          let altura = document.getElementById('altura').value
+          console.log(document.getElementById('altura').value)
+          let nacimiento = document.getElementById('nacimiento').value
+          console.log(document.getElementById('nacimiento').value)
 
-      let personaNueva = new Persona (nombre, edad, sexo, peso, altura, nacimiento);
+          let personaNueva = new Persona (nombre, edad, sexo, peso, altura, nacimiento);
 
-      personaNueva.mostrarGeneracion()
-      
-      
-      
-      
-   
-      
-      e.preventDefault();})
-      
+        
 
-      
-     
-      
-    }
-    
-    function edades(){
-        document.getElementById('produc-form').addEventListener('submit', function(e){
-            let nombre = document.getElementById('nombre').value
-            console.log(document.getElementById('nombre').value)
-            let edad = document.getElementById('edad').value
-            console.log(document.getElementById('edad').value)
-            let sexo = document.getElementById('sexo').value
-            console.log(document.getElementById('sexo').value)
-            let peso = document.getElementById('peso').value
-            console.log(document.getElementById('peso').value)
-            let altura = document.getElementById('altura').value
-            console.log(document.getElementById('altura').value)
-            let nacimiento = document.getElementById('nacimiento').value
-            console.log(document.getElementById('nacimiento').value)
+            document.getElementById("edad").addEventListener("click", personaNueva.mayorEdad())
+            
+            document.getElementById("generacion").addEventListener("click", personaNueva.mostrarGeneracion())
+            
+            
           
-            let personaNueva = new Persona (nombre, edad, sexo, peso, altura, nacimiento);
-         
-            personaNueva.mayorEdad();
-          e.preventDefault();})
-        }
+           
+            
+            
+          
 
+          e.preventDefault();})
+        
+        
+        
+         
+     
+    
+    
    
 
     
